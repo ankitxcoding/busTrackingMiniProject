@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Tracking System</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/photos/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/photos/logo/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner"></div>
+    </header>
+    <nav>
+        <a class="menubutton" href="index.html">Home</a>
+        <a class="menubutton" href="how to use.html">How To Use</a>
+        <a class="menubutton" href="about us.html">About Us</a>
+    </nav>
+
+    <main>
+    <section>
+        <h2>Track Buses</h2>
+        <h3>From</h3>
+        <span><select id="slct1" name="slct1" onchange="populate(this.id,'slct2')" required>
+            <option value="">--from--</option>
+            <option value="jaunpur">Jaunpur</option>
+            <option value="shahganj">Shahganj</option>
+        </select></span>
+        <br>
+        <h3>To</h3>
+        <span><select id="slct2" name="slct2" required></select></span>
+
+        <h3>Select Bus Type</h3>
+        Government <input type="radio" name="bus" id="bus" required>
+        Private <input type="radio" name="bus" id="bus" required>
+        <br>
+        <h3>Journey Date & Time</h3>
+        <input type="date" name="date_time"  id="date_time" required>
+        <br>
+        <br>
+        <input type="submit" value="Track">
+
+    </section>    
+    </main>
+
+    <footer>
+        <a href="faq.html">FAQs</a>
+        <a href="contact us.html">Contact Us</a>
+    </footer>
+</body>
+</html>
